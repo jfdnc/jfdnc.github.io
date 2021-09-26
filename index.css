@@ -47,27 +47,11 @@ header {
 }
 
 .gh-link {
-  -webkit-animation: color-pulse 4s infinite;
-          animation: color-pulse 4s infinite;
   text-decoration: none;
 }
 
 .linkedin-link {
-  -webkit-animation: color-pulse 4s infinite;
-          animation: color-pulse 4s infinite;
   text-decoration: none;
-}
-
-@-webkit-keyframes color-pulse {
-  0% { -webkit-filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
-  50%  { -webkit-filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); }
-  100% { -webkit-filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
-}
-
-@keyframes color-pulse {
-  0% { -webkit-filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
-  50%  { -webkit-filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); }
-  100% { -webkit-filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
 }
 
 @media screen and (max-width: 520px) {
