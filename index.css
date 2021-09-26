@@ -1,17 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body {
   margin: 0;
   min-height: 100vh;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-link-container {
   width: 643px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   text-align: center;
   padding: 10px 6px 4px 6px;
 }
@@ -19,37 +34,53 @@ header {
 .header-tag {
   margin: auto auto auto 0;
   font-size: 1.4rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .tc-link {
   color: #473b8e;
-  text-decoration-skip: ink;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
 }
 
 .gh-link {
-  animation: color-pulse 4s infinite;
+  -webkit-animation: color-pulse 4s infinite;
+          animation: color-pulse 4s infinite;
   text-decoration: none;
 }
 
 .linkedin-link {
-  animation: color-pulse 4s infinite;
+  -webkit-animation: color-pulse 4s infinite;
+          animation: color-pulse 4s infinite;
   text-decoration: none;
 }
 
+@-webkit-keyframes color-pulse {
+  0%, 100%  { -webkit-filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
+  50%  { -webkit-filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); }
+}
+
 @keyframes color-pulse {
-  0%, 100%  { filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
-  50%  { filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); }
+  0%, 100%  { -webkit-filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); filter: invert(12%) sepia(98%) saturate(6809%) hue-rotate(297deg) brightness(65%) contrast(116%); }
+  50%  { -webkit-filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); filter: invert(0%) sepia(14%) saturate(7466%) hue-rotate(277deg) brightness(101%) contrast(101%); }
 }
 
 @media screen and (max-width: 520px) {
   .header-link-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .header-tag {
     margin: 0 auto;
   }
   .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 12px auto 0 auto;
   }
@@ -60,8 +91,12 @@ header {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .center-content {
@@ -71,7 +106,10 @@ main {
 .wiz-pic {
   margin: auto auto;
   display: block;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .magic-orb {
@@ -82,18 +120,50 @@ main {
 
 .magic-orb::after {
   content: "";
-  animation: shadow-pulse 3s infinite;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
 }
 
-@keyframes shadow-pulse {
+@-webkit-keyframes shadow-pulse {
   0%, 100%  {
-    box-shadow:
+    -webkit-box-shadow:
+      0 0 60px 30px #fff,
+      0 0 100px 60px #f0f,
+      0 0 140px 90px #0ff;
+            box-shadow:
       0 0 60px 30px #fff,
       0 0 100px 60px #f0f,
       0 0 140px 90px #0ff;
   }
   50%  {
-    box-shadow:
+    -webkit-box-shadow:
+      0 0 50px 40px #fff,
+      0 0 90px 70px #f0f,
+      0 0 130px 100px #0ff;
+            box-shadow:
+      0 0 50px 40px #fff,
+      0 0 90px 70px #f0f,
+      0 0 130px 100px #0ff;
+  }
+}
+
+@keyframes shadow-pulse {
+  0%, 100%  {
+    -webkit-box-shadow:
+      0 0 60px 30px #fff,
+      0 0 100px 60px #f0f,
+      0 0 140px 90px #0ff;
+            box-shadow:
+      0 0 60px 30px #fff,
+      0 0 100px 60px #f0f,
+      0 0 140px 90px #0ff;
+  }
+  50%  {
+    -webkit-box-shadow:
+      0 0 50px 40px #fff,
+      0 0 90px 70px #f0f,
+      0 0 130px 100px #0ff;
+            box-shadow:
       0 0 50px 40px #fff,
       0 0 90px 70px #f0f,
       0 0 130px 100px #0ff;
